@@ -1,0 +1,20 @@
+name: My First Workflow
+
+# 1. When should this run?
+on: [push]
+
+# 2. What should it do?
+jobs:
+  say-hello:
+    # The type of machine to run on
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+
+      - name: Run a one-line script
+        run: echo "Hello, GitHub Actions is working!"
+
+      - name: Check Node version
+        run: node -v
