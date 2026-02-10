@@ -1,7 +1,7 @@
 name: My First Workflow
 
 # 1. When should this run?
-on: [push]
+on: [push, workflow_dispatch]
 
 # 2. What should it do?
 jobs:
